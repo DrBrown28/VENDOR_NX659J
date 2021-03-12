@@ -1,4 +1,4 @@
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2020-2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -378,7 +378,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/NX659J/proprietary/vendor/etc/init/wifi-diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi-diag.rc \
     vendor/nubia/NX659J/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/nubia/NX659J/proprietary/vendor/etc/keybox.xml:$(TARGET_COPY_OUT_VENDOR)/etc/keybox.xml \
-    vendor/nubia/NX659J/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/nubia/NX659J/proprietary/vendor/etc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf \
     vendor/nubia/NX659J/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     vendor/nubia/NX659J/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
