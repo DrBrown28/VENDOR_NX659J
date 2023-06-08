@@ -120,13 +120,30 @@
         <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
         <!-- LPM Bias resource opcode, value-->
         <!-- MIN_ONLINE_CPU_CLUSTER_BIG opcode, value-->
+        <!-- Below additional resources for 120+fps-->
+        <!-- SCHED_PREFER_SPREAD resource opcode, value -->
 
         <!-- Type="1", Vertical Scroll boost -->
         <Config
-            Id="0x00001080" Type="1" Enable="false" Target="kona"
+            Id="0x00001080" Type="1" Enable="false" Target="kona" Fps="60"
             Resources="0x43000000, 0x19, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
                        0x40C00000, 0x2, 0x43400000, 0x1F40, 0x40C74000, 0xFF, 0x40408000, 0x63,
                        0x41000000, 3" />
+        <Config
+            Id="0x00001080" Type="1" Enable="false" Target="kona" Fps="90"
+            Resources="0x43000000, 0x19, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
+                       0x40C00000, 0x2, 0x43400000, 0x1F40, 0x40C74000, 0xFF, 0x40408000, 0x63,
+                       0x41000000, 3" />
+        <Config
+            Id="0x00001080" Type="1" Enable="false" Target="kona" Fps="120"
+            Resources="0x43000000, 0x19, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
+                       0x40C00000, 0x2, 0x43400000, 0x1F40, 0x40C74000, 0xFF, 0x40408000, 0x63,
+                       0x41000000, 3, 0x40CA8000, 2" />
+        <Config
+            Id="0x00001080" Type="1" Enable="false" Target="kona" Fps="144"
+            Resources="0x43000000, 0x19, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
+                       0x40C00000, 0x2, 0x43400000, 0x1F40, 0x40C74000, 0xFF, 0x40408000, 0x63,
+                       0x41000000, 3, 0x40CA8000, 2" />
 
     <!--Prefling Scroll boost-->
         <!-- LLCBW_MIN_FREQ resource opcode, value-->
@@ -138,13 +155,30 @@
         <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
         <!-- LPM Bias resource opcode, value-->
         <!-- MIN_ONLINE_CPU_CLUSTER_BIG opcode, value-->
+        <!-- Below additional resources for 120+fps-->
+        <!-- SCHED_PREFER_SPREAD resource opcode, value -->
         <!-- TIMEOUT 80ms -->
         <!-- Type="4", Prefling boost -->
         <Config
-            Id="0x00001080" Type="4" Enable="false" Timeout="80" Target="kona"
+            Id="0x00001080" Type="4" Enable="false" Timeout="80" Target="kona" Fps="60"
             Resources="0x43000000, 0x19, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
                        0x40C00000, 0x2, 0x43400000, 0x1F40, 0x40C74000, 0xFF, 0x40408000, 0x63,
                        0x41000000, 3" />
+        <Config
+            Id="0x00001080" Type="4" Enable="false" Timeout="80" Target="kona" Fps="90"
+            Resources="0x43000000, 0x19, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
+                       0x40C00000, 0x2, 0x43400000, 0x1F40, 0x40C74000, 0xFF, 0x40408000, 0x63,
+                       0x41000000, 3" />
+        <Config
+            Id="0x00001080" Type="4" Enable="false" Timeout="80" Target="kona" Fps="120"
+            Resources="0x43000000, 0x19, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
+                       0x40C00000, 0x2, 0x43400000, 0x1F40, 0x40C74000, 0xFF, 0x40408000, 0x63,
+                       0x41000000, 3, 0x40CA8000, 2" />
+        <Config
+            Id="0x00001080" Type="4" Enable="false" Timeout="80" Target="kona" Fps="144"
+            Resources="0x43000000, 0x19, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
+                       0x40C00000, 0x2, 0x43400000, 0x1F40, 0x40C74000, 0xFF, 0x40408000, 0x63,
+                       0x41000000, 3, 0x40CA8000, 2" />
 
 	<!--MTP boost-->
         <!-- SCHEDBOOST resource opcode, value-->
@@ -169,13 +203,29 @@
         <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
         <!-- LPM Bias resource opcode, value-->
         <!-- MIN_ONLINE_CPU_CLUSTER_BIG opcode, value-->
-
+        <!-- Below additional resources for 120+fps-->
+        <!-- SCHED_PREFER_SPREAD resource opcode, value -->
         <!-- Type="1", Drag boost -->
         <Config
-            Id="0x00001087" Type="1" Enable="false" Timeout="0" Target="kona"
+            Id="0x00001087" Type="1" Enable="false" Timeout="0" Target="kona" Fps="60"
             Resources="0x43000000, 0x11, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
                        0x40C00000, 0x2, 0x43400000, 0x1F40, 0x40C74000, 0xFF, 0x40408000, 0x63,
                        0x41000000, 3" />
+        <Config
+            Id="0x00001087" Type="1" Enable="false" Timeout="0" Target="kona" Fps="90"
+            Resources="0x43000000, 0x11, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
+                       0x40C00000, 0x2, 0x43400000, 0x1F40, 0x40C74000, 0xFF, 0x40408000, 0x63,
+                       0x41000000, 3" />
+        <Config
+            Id="0x00001087" Type="1" Enable="false" Timeout="0" Target="kona" Fps="120"
+            Resources="0x43000000, 0x11, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
+                       0x40C00000, 0x2, 0x43400000, 0x1F40, 0x40C74000, 0xFF, 0x40408000, 0x63,
+                       0x41000000, 3, 0x40CA8000, 2" />
+        <Config
+            Id="0x00001087" Type="1" Enable="false" Timeout="0" Target="kona" Fps="144"
+            Resources="0x43000000, 0x11, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
+                       0x40C00000, 0x2, 0x43400000, 0x1F40, 0x40C74000, 0xFF, 0x40408000, 0x63,
+                       0x41000000, 3, 0x40CA8000, 2" />
 
     <!--PackageInstall boost-->
         <!-- SCHEDBOOST resource opcode, value-->
@@ -185,7 +235,7 @@
         <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value-->
-        <!-- SCHED_SYNC_HINT_ENABLE resource opcode, value-->
+        <!-- SCHED_SYNC_HINT_ENABLE resource opcode, value -->
         <!-- Type="", Package Install boost -->
 
         <Config
@@ -242,6 +292,44 @@
         <Config
                 Id="0x00001040" Enable="false" Timeout="0" Target="kona"
                 Resources="0x40000000, 0x0" />
+
+    <!--FPS Update from Framework-->
+        <!-- SCHED_WINDOW_TICKS_UPDATE resource opcode, value -->
+        <!-- Below additional resources for 120fps, 144fps-->
+        <!-- SCHED_PREFER_SPREAD resource opcode, value -->
+        <!-- Type indicates FPS -->
+        <!-- 30fps -->
+        <Config
+            Id="0x00001094" Type="30" Enable="false" Target="kona" Timeout="0"
+            Resources="0x40CA4000, 8" />
+        <!-- 45fps -->
+        <Config
+            Id="0x00001094" Type="45" Enable="false" Target="kona" Timeout="0"
+            Resources="0x40CA4000, 5" />
+        <!-- 60fps -->
+        <Config
+            Id="0x00001094" Type="60" Enable="false" Target="kona" Timeout="0"
+            Resources="0x40CA4000, 4" />
+        <!-- 90fps -->
+        <Config
+            Id="0x00001094" Type="90" Enable="false" Target="kona" Timeout="0"
+            Resources="0x40CA4000, 3" />
+        <!-- 120fps -->
+        <Config
+            Id="0x00001094" Type="120" Enable="false" Target="kona" Timeout="0"
+            Resources="0x40CA4000, 2, 0x40CA8000, 1" />
+        <!-- 144fps -->
+        <Config
+            Id="0x00001094" Type="144" Enable="false" Target="kona" Timeout="0"
+            Resources="0x40CA4000, 2, 0x40CA8000, 1" />
+        <!-- 180fps -->
+        <Config
+            Id="0x00001094" Type="180" Enable="false" Target="kona" Timeout="0"
+            Resources="0x40CA4000, 2" />
+        <!-- 240fps -->
+        <Config
+            Id="0x00001094" Type="240" Enable="false" Target="kona" Timeout="0"
+            Resources="0x40CA4000, 2" />
 
     </PerfBoost>
 </BoostConfigs>

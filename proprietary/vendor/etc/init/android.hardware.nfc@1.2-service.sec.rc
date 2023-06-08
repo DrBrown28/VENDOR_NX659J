@@ -5,5 +5,5 @@ service nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service.sec
     oneshot
     disabled
 
-on boot && property:ro.boot.product.hardware.sku=nfc
+on property:vendor.nfc.recheck=yes && property:ro.boot.product.hardware.sku=nfc
     start nfc_hal_service	

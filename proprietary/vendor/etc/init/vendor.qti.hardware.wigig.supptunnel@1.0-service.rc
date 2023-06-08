@@ -11,20 +11,20 @@ service wigighalsvc /vendor/bin/wigighalsvc
     group wifi
     disabled
 
-# wpa_supplicant instance for running WIGIG P2P under WIFI
-service wigig_p2p_supplicant /vendor/bin/hw/wpa_supplicant \
-     -O/data/vendor/wifi/wigig_sockets -dd \
-     -g@android:wigig/wpa_wigig0 -Swigigp2p
-#   we will start as root and wpa_supplicant will switch to user wifi
-#   after setting up the capabilities required for WEXT
-#   user wifi
-#   group wifi inet keystore
-    interface android.hardware.wifi.supplicant@1.0::ISupplicant wigigp2p
-    interface android.hardware.wifi.supplicant@1.1::ISupplicant wigigp2p
-    class main
-    socket wigig/wpa_wigig0 dgram 660 wifi wifi
-    disabled
+# hostapd instance for WIGIG SoftAP
+service vendor.wigig_hostapd /vendor/bin/hw/hostapd -dd  -j wigighostapd -g /data/vendor/wifi/wigig_hostapd/global
+    interface android.hardware.wifi.hostapd@1.0::IHostapd wigighostapd
+    interface android.hardware.wifi.hostapd@1.1::IHostapd wigighostapd
+    interface android.hardware.wifi.hostapd@1.2::IHostapd wigighostapd
+    interface vendor.qti.hardware.wifi.hostapd@1.0::IHostapdVendor wigighostapd
+    interface vendor.qti.hardware.wifi.hostapd@1.1::IHostapdVendor wigighostapd
+    interface vendor.qti.hardware.wifi.hostapd@1.2::IHostapdVendor wigighostapd
+    class late_start
+    capabilities NET_ADMIN NET_RAW
+    user wifi
+    group wifi inet keystore
     oneshot
+    disabled
 
 on property:vendor.wigig.driver=on
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -d /vendor/lib/modules wil6210 alt_ifname=1
