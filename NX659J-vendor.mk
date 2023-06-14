@@ -757,7 +757,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/NX659J/proprietary/vendor/lib/libdtsdsec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdtsdsec.so \
     vendor/nubia/NX659J/proprietary/vendor/lib/libfastcrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcrc.so \
     vendor/nubia/NX659J/proprietary/vendor/lib/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvdsp_stub.so \
-    vendor/nubia/NX659J/proprietary/vendor/lib/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvopt.so \
     vendor/nubia/NX659J/proprietary/vendor/lib/libgarden.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgarden.so \
     vendor/nubia/NX659J/proprietary/vendor/lib/libgcs-calwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-calwrapper.so \
     vendor/nubia/NX659J/proprietary/vendor/lib/libgcs-ipc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-ipc.so \
@@ -1348,7 +1347,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/NX659J/proprietary/vendor/lib64/libdtsdsec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdtsdsec.so \
     vendor/nubia/NX659J/proprietary/vendor/lib64/libembmsservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libembmsservice.so \
     vendor/nubia/NX659J/proprietary/vendor/lib64/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvdsp_stub.so \
-    vendor/nubia/NX659J/proprietary/vendor/lib64/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvopt.so \
     vendor/nubia/NX659J/proprietary/vendor/lib64/libgarden.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden.so \
     vendor/nubia/NX659J/proprietary/vendor/lib64/libgarden_haltests_e2e.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden_haltests_e2e.so \
     vendor/nubia/NX659J/proprietary/vendor/lib64/libgcs-calwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs-calwrapper.so \
@@ -1648,6 +1646,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/NX659J/proprietary/vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 
 PRODUCT_PACKAGES += \
+    libfastcvopt \
     liblbs_core \
     libloc_api_v02 \
     libthermalclient \
