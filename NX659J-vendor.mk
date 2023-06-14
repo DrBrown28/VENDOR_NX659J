@@ -1650,7 +1650,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     liblbs_core \
     libloc_api_v02 \
-    libplatformconfig \
     libthermalclient \
     CACertService \
     CneApp \
