@@ -1652,7 +1652,6 @@ PRODUCT_PACKAGES += \
     libloc_api_v02 \
     libplatformconfig \
     libthermalclient \
-    vendor.qti.hardware.capabilityconfigstore@1.0 \
     CACertService \
     CneApp \
     IWlanService \
