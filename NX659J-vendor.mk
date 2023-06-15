@@ -1655,10 +1655,10 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     WfdCommon \
     tcmclient \
-    qti-telephony-common \
     com.qti.dpmframework \
     dpmapi \
     qcrilhook \
+    qti-telephony-common \
     vendor.qti.hardware.alarm-V1.0-java \
     vendor.qti.hardware.sensorscalibrate-V1.0-java \
     android.hardware.gnss@2.1-service-qti \
