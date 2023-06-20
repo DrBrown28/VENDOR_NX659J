@@ -169,6 +169,12 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/NX659J/proprietary/vendor/etc/acdbdata/MTP/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/workspaceFile.qwsp \
     vendor/nubia/NX659J/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
     vendor/nubia/NX659J/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
+    vendor/nubia/NX659J/proprietary/vendor/etc/camera/SceneParamFile:$(TARGET_COPY_OUT_VENDOR)/etc/camera/SceneParamFile \
+    vendor/nubia/NX659J/proprietary/vendor/etc/camera/SceneParamFile-320:$(TARGET_COPY_OUT_VENDOR)/etc/camera/SceneParamFile-320 \
+    vendor/nubia/NX659J/proprietary/vendor/etc/camera/SceneParamFile-430:$(TARGET_COPY_OUT_VENDOR)/etc/camera/SceneParamFile-430 \
+    vendor/nubia/NX659J/proprietary/vendor/etc/camera/VfbTuningInterface.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/VfbTuningInterface.xml \
+    vendor/nubia/NX659J/proprietary/vendor/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camxoverridesettings.txt \
+    vendor/nubia/NX659J/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
     vendor/nubia/NX659J/proprietary/vendor/etc/charger_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fstab.qti \
     vendor/nubia/NX659J/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
     vendor/nubia/NX659J/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile2.xml \
