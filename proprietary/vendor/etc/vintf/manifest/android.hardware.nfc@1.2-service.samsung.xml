@@ -1,0 +1,11 @@
+<!--
+    Input:
+        hardware/samsung/nfc/1.2/android.hardware.nfc@1.2-service.samsung.xml
+-->
+<manifest version="9.0" type="device">
+    <hal format="hidl" override="true">
+        <name>android.hardware.nfc</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.2::INfc/default</fqname>
+    </hal>
+</manifest>
